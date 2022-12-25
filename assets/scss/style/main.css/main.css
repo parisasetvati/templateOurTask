@@ -1,0 +1,475 @@
+/************** variable ***************/ /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap");
+/*=============== GOOGLE FONTS ===============*/
+/*=============== General style ===============*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Montserrat", sans-serif;
+  line-height: 1.45;
+}
+
+textarea.form-control {
+  resize: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  margin: 0;
+}
+
+mark {
+  padding: 0 !important;
+  background-color: #ffcb05;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+.icon_button {
+  cursor: pointer;
+}
+
+.show_password {
+  color: #6c757d;
+}
+
+.popover_ul,
+.popover_p {
+  padding: 0;
+  white-space: nowrap;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.popover_p {
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.popover_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.form-control.is-valid {
+  border-color: #198754 !important;
+}
+
+.form-select.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.form-select.is-valid {
+  border-color: #198754 !important;
+}
+
+.help-text {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
+  color: #d93025;
+  white-space: normal;
+  line-height: normal;
+  display: flex;
+  margin-top: 5px;
+}
+
+.text-copy-link {
+  font-size: 0.8rem;
+  margin: 10px 0;
+  font-weight: 500;
+  color: #068f2f;
+}
+
+.mb-60 {
+  margin-bottom: 100px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pt-65 {
+  padding-top: 118px;
+}
+
+.fa-star {
+  color: #ffa800;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.second_title {
+  font-size: 1.66rem;
+  font-weight: 600;
+  color: #2a3855;
+  text-transform: capitalize;
+}
+
+.head_title {
+  font-size: 2.33rem;
+  font-weight: 700;
+  color: #2a3855;
+  text-transform: capitalize;
+}
+
+.third_title {
+  font-size: 1.33rem;
+  font-weight: 600;
+  color: #2a3855;
+  text-transform: capitalize;
+}
+
+.fourth_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2a3855;
+  text-transform: capitalize;
+}
+
+a[disabled=disabled] {
+  pointer-events: none;
+  cursor: default;
+  background-color: #dedede;
+}
+
+a[disabled=""] {
+  pointer-events: none;
+  cursor: pointer;
+  background-color: #8c14fc;
+}
+
+.section_padding {
+  padding: 2rem 0;
+}
+
+/************** variable ***************/ /* ----------------------- Responsive -------------------------- */
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .personal_information .left_side_content:after {
+    content: none !important;
+  }
+  .introduction {
+    flex-direction: column;
+  }
+  .introduction .personal_information {
+    order: 2;
+  }
+  .introduction .avatar {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  .left_side_content {
+    order: 2;
+  }
+  .right_side_content {
+    order: 1;
+  }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+  }
+  .introduction .personal_information {
+    order: 2;
+  }
+  .introduction .avatar {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  header .profile-image {
+    justify-content: center !important;
+    margin: 10px 0 20px 0 !important;
+  }
+  .Personal-Information .information {
+    height: 0 !important;
+  }
+  .left_side_content {
+    order: 2;
+  }
+  .right_side_content {
+    order: 1;
+  }
+  .title .fourth_title {
+    font-size: 1.1rem !important;
+  }
+}
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+  .title .fourth_title {
+    font-size: 1rem !important;
+  }
+}
+.title {
+  position: relative;
+  width: 100%;
+  margin: 15px 0 30px 0;
+}
+.title h2 {
+  font-size: 1.2rem;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.title p {
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  line-height: 1.66;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background-color: #d3d3d3;
+  top: 32px;
+  left: 0;
+  z-index: 1;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  background-color: #50b848;
+  top: 28px;
+  left: 0;
+  z-index: 19;
+}
+
+.item {
+  margin-bottom: 30px;
+}
+
+.main {
+  padding: 2rem 0;
+}
+.main .introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .introduction .name {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.main .introduction .name :nth-child(1) {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.main .introduction .description p {
+  line-height: 1.66;
+  margin-bottom: 0 !important;
+}
+.main .introduction .avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+  background-color: #d3d3d3;
+}
+.main header {
+  position: relative;
+  margin: 0 30px;
+}
+.main header .introduction {
+  position: relative;
+  margin-top: 40px;
+}
+.main header .introduction .name {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 60pt;
+}
+.main header .introduction .name :nth-child(1) {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.main header .introduction .description p {
+  margin-bottom: 0 !important;
+}
+.main header .profile-image {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.main header .profile-image .image {
+  width: 190px;
+  height: 190px;
+  border-radius: 100%;
+  background-color: #d3d3d3;
+}
+.main .personal_information {
+  position: relative;
+}
+.main .personal_information .left_side_content:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 24%;
+  z-index: 1;
+}
+.main .personal_information .information {
+  position: relative;
+}
+.main .personal_information .information:after {
+  content: "";
+  position: absolute;
+  height: 93%;
+  width: 2px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 32%;
+  z-index: 1;
+}
+.main .personal_information .Personal-Information-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .personal_information .Personal-Information-item .skills_list .skills_item {
+  margin: 0 0 1rem 0;
+}
+.main .personal_information .Personal-Information-item .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .personal_information .Personal-Information-item .item :nth-child(1) {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.main .personal_information .Personal-Information-item .item :nth-child(2),
+.main .personal_information .Personal-Information-item .item :nth-child(3),
+.main .personal_information .Personal-Information-item .item :nth-child(4) {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.main .personal_information .Personal-Information-item .item .education-title {
+  text-transform: uppercase !important;
+}
+.main .personal_information .Personal-Information-item .item .univercity-name {
+  text-transform: capitalize !important;
+}
+.main .personal_information .Personal-Information-item .work-experience-description .year-work,
+.main .personal_information .Personal-Information-item .work-experience-description .job-position {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.main .personal_information .Personal-Information-item .work-experience-description .job-position {
+  font-size: 1rem;
+}
+.main .personal_information .Personal-Information-item .work-experience-description .key_duties {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.main .personal_information .Personal-Information-item .work-experience-description .duties .key_duties_list .key_duties_list_item {
+  margin: 10px 0;
+  line-height: 1.66;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.main .personal_information .referees,
+.main .personal_information .hobby {
+  position: relative;
+  text-transform: capitalize;
+}
+.main .personal_information .referees .referees-description h2,
+.main .personal_information .hobby .referees-description h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.main .personal_information .referees .hobby-description,
+.main .personal_information .hobby .hobby-description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.main .personal_information .referees .hobby-description .hobby_list_item,
+.main .personal_information .hobby .hobby-description .hobby_list_item {
+  font-weight: 500;
+}
+.main .personal_information .publication .publication-description {
+  margin-bottom: 10px;
+}
+.main .personal_information .publication .publication-description h3 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.main .personal_information footer .footer {
+  background-color: #50b848;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+}
+
+footer .footer {
+  background-color: #50b848;
+  width: 100%;
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */
